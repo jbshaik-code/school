@@ -1,6 +1,6 @@
 "use client";
 
-import { GraduationCap, TrendingUp, Users, DollarSign, Target, Zap, Shield, BarChart3, Sparkles, CheckCircle2, BookOpen, Calendar, UserCheck, ClipboardList, Video, Bell, CreditCard, Lock, Clock, School, FileText, Settings, Smartphone, Apple, Gamepad2, Brain, MessageCircle, Globe, Wifi, Award, Atom, Languages, Calculator } from "lucide-react";
+import { GraduationCap, TrendingUp, Users, DollarSign, Target, Zap, Shield, BarChart3, Sparkles, CheckCircle2, BookOpen, Calendar, UserCheck, ClipboardList, Video, Bell, CreditCard, Lock, Clock, School, FileText, Settings, Smartphone, Apple, Gamepad2, Brain, MessageCircle, Globe, Wifi, Award, Atom, Languages, Calculator, Phone, MessageSquare, Monitor } from "lucide-react";
 
 export default function Home() {
   return (
@@ -17,9 +17,9 @@ export default function Home() {
           <div className="flex items-center gap-6 text-sm font-medium text-slate-600">
             <a href="#ksa" className="hover:text-blue-600 transition">KSA Market</a>
             <a href="#solution" className="hover:text-blue-600 transition">Features</a>
+            <a href="#communication" className="hover:text-blue-600 transition">Communication</a>
             <a href="#games" className="hover:text-blue-600 transition">Gamified Learning</a>
             <a href="#revenue" className="hover:text-blue-600 transition">Revenue</a>
-            <a href="#traction" className="hover:text-blue-600 transition">Traction</a>
             <a href="#investment" className="hover:text-blue-600 transition">Investment</a>
           </div>
         </div>
@@ -127,8 +127,8 @@ export default function Home() {
                   <MessageCircle className="w-6 h-6 text-green-700" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">WhatsApp Integration</h3>
-                  <p className="text-green-100">Direct parent communication via KSA's most popular messaging app</p>
+                  <h3 className="text-xl font-semibold text-white mb-2">Built-in Communication Hub</h3>
+                  <p className="text-green-100">In-platform voice calls, video chat & messaging - zero third-party apps</p>
                 </div>
               </div>
             </div>
@@ -306,12 +306,12 @@ export default function Home() {
               </div>
               <div className="p-5 bg-white rounded-xl border border-slate-200 hover:shadow-lg hover:border-blue-300 transition">
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <MessageCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-base font-semibold text-slate-900 mb-1">WhatsApp Integration</h4>
-                    <p className="text-sm text-slate-600">Direct parent communication via WhatsApp API</p>
+                    <h4 className="text-base font-semibold text-slate-900 mb-1">In-Platform Communication</h4>
+                    <p className="text-sm text-slate-600">Voice calls, video chat & messaging built-in</p>
                   </div>
                 </div>
               </div>
@@ -471,6 +471,158 @@ export default function Home() {
                   <div className="absolute -bottom-3 -right-3 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-blue-200">
                     <Smartphone className="w-7 h-7 text-green-600" />
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Built-in Communication Platform */}
+      <section id="communication" className="py-20 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-700 text-sm font-medium mb-6">
+              <MessageCircle className="w-4 h-4" />
+              Zero Third-Party Apps
+            </div>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">Built-in Communication Hub</h2>
+            <p className="text-xl text-slate-600">Everything happens inside your platform - complete control, zero external apps</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border-2 border-blue-200">
+              <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                <Phone className="w-9 h-9 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3 text-center">Voice Calls</h3>
+              <ul className="space-y-3 text-slate-700">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>One-on-one parent-teacher calls</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>High-quality HD audio</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Call history & recordings</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Schedule calls in advance</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border-2 border-blue-200">
+              <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                <Monitor className="w-9 h-9 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3 text-center">Video Meetings</h3>
+              <ul className="space-y-3 text-slate-700">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Parent-teacher conferences</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Screen sharing for presentations</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Group video calls (up to 50)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Meeting recordings available</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border-2 border-blue-200">
+              <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                <MessageSquare className="w-9 h-9 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3 text-center">In-App Messaging</h3>
+              <ul className="space-y-3 text-slate-700">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Real-time chat (parents ↔ teachers)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Group chats by class/section</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>File & image sharing</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Arabic & English support</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Why This Matters for Investors */}
+          <div className="p-8 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-3xl font-bold text-white mb-4">Why This is a Game-Changer</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Lock className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <div className="text-white font-semibold mb-1">Complete Platform Lock-in</div>
+                      <div className="text-slate-300 text-sm">Users never leave your ecosystem - massive retention boost</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Shield className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <div className="text-white font-semibold mb-1">Data Privacy & Security</div>
+                      <div className="text-slate-300 text-sm">All communications encrypted and stored on your servers</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <DollarSign className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <div className="text-white font-semibold mb-1">Zero Third-Party Fees</div>
+                      <div className="text-slate-300 text-sm">No WhatsApp Business API costs or Zoom subscriptions</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <BarChart3 className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <div className="text-white font-semibold mb-1">Rich Analytics</div>
+                      <div className="text-slate-300 text-sm">Track all communication patterns, engagement metrics</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                <div className="text-center mb-6">
+                  <div className="text-5xl font-bold text-white mb-2">80%</div>
+                  <div className="text-blue-200">Higher User Retention</div>
+                </div>
+                <div className="text-center mb-6">
+                  <div className="text-5xl font-bold text-white mb-2">$0</div>
+                  <div className="text-blue-200">Third-Party Communication Costs</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-5xl font-bold text-white mb-2">100%</div>
+                  <div className="text-blue-200">Control Over User Experience</div>
                 </div>
               </div>
             </div>
