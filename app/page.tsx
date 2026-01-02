@@ -1,6 +1,6 @@
 "use client";
 
-import { GraduationCap, TrendingUp, Users, DollarSign, Target, Zap, Shield, BarChart3, Sparkles, CheckCircle2, BookOpen, Calendar, UserCheck, ClipboardList, Video, Bell, CreditCard, Lock, Clock, School, FileText, Settings, Smartphone, Apple, Gamepad2, Brain, MessageCircle, Globe, Wifi, Award, Atom, Languages, Calculator, Phone, MessageSquare, Monitor } from "lucide-react";
+import { GraduationCap, TrendingUp, Users, DollarSign, Target, Zap, Shield, BarChart3, Sparkles, CheckCircle2, BookOpen, Calendar, UserCheck, ClipboardList, Video, Bell, CreditCard, Lock, Clock, School, FileText, Settings, Smartphone, Apple, Gamepad2, Brain, MessageCircle, Globe, Wifi, Award, Atom, Languages, Calculator, Phone, MessageSquare, Monitor, Flag, Landmark, Building2, Globe2 } from "lucide-react";
 
 export default function Home() {
   return (
@@ -35,7 +35,10 @@ export default function Home() {
           <h1 className="text-6xl font-bold text-slate-900 mb-6 leading-tight">
             The Future of<br />
             <span className="text-blue-600">Education Management</span><br />
-            <span className="text-3xl text-slate-700">in Saudi Arabia 🇸🇦</span>
+            <span className="text-3xl text-slate-700 flex items-center justify-center gap-2 mt-4">
+              in Saudi Arabia 
+              <Flag className="w-8 h-8 text-green-600 inline-block" />
+            </span>
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12">
             AI-powered CRM serving Schools, Universities & Colleges across KSA with gamified learning, 
@@ -64,7 +67,9 @@ export default function Home() {
       <section id="ksa" className="py-20 px-6 bg-gradient-to-br from-green-700 to-green-800">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="text-7xl mb-4">🇸🇦</div>
+            <div className="inline-flex items-center justify-center w-24 h-24 bg-white rounded-3xl shadow-2xl mb-6 transform hover:scale-110 transition-transform">
+              <Flag className="w-14 h-14 text-green-600" />
+            </div>
             <h2 className="text-5xl font-bold text-white mb-4">Saudi Arabia: The Perfect Market</h2>
             <p className="text-2xl text-green-100 mb-8">$10B+ Education Market • Vision 2030 Aligned • Government-Backed Growth</p>
           </div>
@@ -85,7 +90,9 @@ export default function Home() {
 
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl border-2 border-green-200">
-                <div className="text-5xl mb-3">📚</div>
+                <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mb-4 transform hover:rotate-12 transition-transform shadow-lg">
+                  <BookOpen className="w-9 h-9 text-white" />
+                </div>
                 <div className="text-3xl font-bold text-slate-900 mb-2">Digital Education</div>
                 <p className="text-slate-700 mb-4">Vision 2030 mandates 100% digital transformation of education sector by 2030</p>
                 <div className="flex items-center gap-2 text-green-700 font-semibold">
@@ -95,7 +102,9 @@ export default function Home() {
               </div>
 
               <div className="p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl border-2 border-green-200">
-                <div className="text-5xl mb-3">🎯</div>
+                <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mb-4 transform hover:rotate-12 transition-transform shadow-lg">
+                  <Users className="w-9 h-9 text-white" />
+                </div>
                 <div className="text-3xl font-bold text-slate-900 mb-2">Quality of Life</div>
                 <p className="text-slate-700 mb-4">Improve parent-school communication and student outcomes - key Vision 2030 pillar</p>
                 <div className="flex items-center gap-2 text-green-700 font-semibold">
@@ -105,7 +114,9 @@ export default function Home() {
               </div>
 
               <div className="p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl border-2 border-green-200">
-                <div className="text-5xl mb-3">🚀</div>
+                <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mb-4 transform hover:rotate-12 transition-transform shadow-lg">
+                  <Zap className="w-9 h-9 text-white" />
+                </div>
                 <div className="text-3xl font-bold text-slate-900 mb-2">Tech Innovation</div>
                 <p className="text-slate-700 mb-4">AI & gamification to create globally competitive education system</p>
                 <div className="flex items-center gap-2 text-green-700 font-semibold">
@@ -118,8 +129,8 @@ export default function Home() {
             <div className="p-6 bg-gradient-to-r from-green-700 to-green-800 rounded-2xl">
               <div className="flex items-center justify-between flex-wrap gap-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center">
-                    <Shield className="w-9 h-9 text-green-700" />
+                  <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform">
+                    <Landmark className="w-9 h-9 text-green-700" />
                   </div>
                   <div>
                     <div className="text-white font-bold text-xl mb-1">Ministry of Education Partnership Potential</div>
@@ -165,8 +176,8 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🕌</span>
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 transform hover:rotate-12 transition-transform shadow-lg">
+                  <Building2 className="w-7 h-7 text-green-700" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Prayer Time Integration</h3>
