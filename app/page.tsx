@@ -1,6 +1,6 @@
 "use client";
 
-import { GraduationCap, TrendingUp, Users, DollarSign, Target, Zap, Shield, BarChart3, Sparkles, CheckCircle2, BookOpen, Calendar, UserCheck, ClipboardList, Video, Bell, CreditCard, Lock, Clock, School, FileText, Settings, Smartphone, Apple, Gamepad2, Brain, MessageCircle, Globe, Wifi, Award, Atom, Languages, Calculator, Phone, MessageSquare, Monitor, Flag, Landmark, Building2, Globe2, Database, Server, CheckCircle, XCircle } from "lucide-react";
+import { GraduationCap, TrendingUp, Users, DollarSign, Target, Zap, Shield, BarChart3, Sparkles, CheckCircle2, BookOpen, Calendar, UserCheck, ClipboardList, Video, Bell, CreditCard, Lock, Clock, School, FileText, Settings, Smartphone, Apple, Gamepad2, Brain, MessageCircle, Globe, Wifi, Award, Atom, Languages, Calculator, Phone, MessageSquare, Monitor, Flag, Landmark, Building2, Globe2, Database, Server, CheckCircle } from "lucide-react";
 
 export default function Home() {
   return (
@@ -285,103 +285,59 @@ export default function Home() {
             <p className="text-2xl text-slate-300">All data hosted in Saudi Arabia • PDPL Compliant • Government Contract Eligible</p>
           </div>
 
-          {/* Main Comparison */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Our Platform */}
+          {/* Our Platform Advantages */}
+          <div className="max-w-4xl mx-auto mb-12">
             <div className="p-10 bg-gradient-to-br from-green-600 to-green-700 rounded-3xl shadow-2xl border-4 border-green-400">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center transform hover:scale-110 transition-transform">
-                  <Database className="w-9 h-9 text-green-700" />
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center transform hover:scale-110 transition-transform shadow-lg">
+                  <Database className="w-12 h-12 text-green-700" />
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-white mb-1">Our Platform</h3>
-                  <p className="text-green-100 text-lg">Saudi Data Centers</p>
+                  <h3 className="text-4xl font-bold text-white mb-1">Saudi Data Centers</h3>
+                  <p className="text-green-100 text-xl">100% Compliant • Government Eligible • Trusted Platform</p>
                 </div>
               </div>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
-                  <CheckCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3 p-5 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <CheckCircle className="w-7 h-7 text-white flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-white font-bold mb-1">Government Contracts Eligible</div>
+                    <div className="text-white font-bold text-lg mb-1">Government Contracts Eligible</div>
                     <div className="text-green-100 text-sm">Ministry of Education tenders accessible - $2B+ market</div>
                   </div>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
-                  <CheckCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                <div className="flex items-start gap-3 p-5 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <CheckCircle className="w-7 h-7 text-white flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-white font-bold mb-1">PDPL & NDMO Compliant</div>
+                    <div className="text-white font-bold text-lg mb-1">PDPL & NDMO Compliant</div>
                     <div className="text-green-100 text-sm">Fully compliant with Saudi Personal Data Protection Law</div>
                   </div>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
-                  <CheckCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                <div className="flex items-start gap-3 p-5 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <CheckCircle className="w-7 h-7 text-white flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-white font-bold mb-1">100% Market Access</div>
+                    <div className="text-white font-bold text-lg mb-1">100% Market Access</div>
                     <div className="text-green-100 text-sm">Public + Private schools, universities, colleges</div>
                   </div>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
-                  <CheckCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                <div className="flex items-start gap-3 p-5 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <CheckCircle className="w-7 h-7 text-white flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-white font-bold mb-1">Zero Data Transfer Concerns</div>
+                    <div className="text-white font-bold text-lg mb-1">Zero Data Transfer Concerns</div>
                     <div className="text-green-100 text-sm">No cross-border transfer issues, parent trust guaranteed</div>
                   </div>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
-                  <CheckCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                <div className="flex items-start gap-3 p-5 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <CheckCircle className="w-7 h-7 text-white flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-white font-bold mb-1">Premium Pricing Power</div>
+                    <div className="text-white font-bold text-lg mb-1">Premium Pricing Power</div>
                     <div className="text-green-100 text-sm">Schools pay 2-3x more for locally-hosted solutions</div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Competitors */}
-            <div className="p-10 bg-gradient-to-br from-red-600 to-red-700 rounded-3xl shadow-2xl border-4 border-red-400 opacity-80">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center">
-                  <Server className="w-9 h-9 text-red-700" />
-                </div>
-                <div>
-                  <h3 className="text-3xl font-bold text-white mb-1">Competitors</h3>
-                  <p className="text-red-100 text-lg">AWS US/EU Servers</p>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
-                  <XCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                <div className="flex items-start gap-3 p-5 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <CheckCircle className="w-7 h-7 text-white flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-white font-bold mb-1">Disqualified from Gov't Contracts</div>
-                    <div className="text-red-100 text-sm">Cannot serve public sector - 70% of market locked out</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
-                  <XCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
-                  <div>
-                    <div className="text-white font-bold mb-1">PDPL Compliance Issues</div>
-                    <div className="text-red-100 text-sm">Complex legal requirements, parent consent needed</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
-                  <XCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
-                  <div>
-                    <div className="text-white font-bold mb-1">Limited Market Access</div>
-                    <div className="text-red-100 text-sm">Only private schools - $3B vs $10B+ market</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
-                  <XCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
-                  <div>
-                    <div className="text-white font-bold mb-1">Data Transfer Concerns</div>
-                    <div className="text-red-100 text-sm">Cross-border transfers require explicit consent</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
-                  <XCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
-                  <div>
-                    <div className="text-white font-bold mb-1">Lower Pricing Power</div>
-                    <div className="text-red-100 text-sm">Competing on price, not trust or compliance</div>
+                    <div className="text-white font-bold text-lg mb-1">Complete Data Sovereignty</div>
+                    <div className="text-green-100 text-sm">All data stays in Saudi Arabia - no external dependencies</div>
                   </div>
                 </div>
               </div>
