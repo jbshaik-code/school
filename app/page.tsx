@@ -1,6 +1,6 @@
 "use client";
 
-import { GraduationCap, TrendingUp, Users, DollarSign, Target, Zap, Shield, BarChart3, Sparkles, CheckCircle2, BookOpen, Calendar, UserCheck, ClipboardList, Video, Bell, CreditCard, Lock, Clock, School, FileText, Settings, Smartphone, Apple } from "lucide-react";
+import { GraduationCap, TrendingUp, Users, DollarSign, Target, Zap, Shield, BarChart3, Sparkles, CheckCircle2, BookOpen, Calendar, UserCheck, ClipboardList, Video, Bell, CreditCard, Lock, Clock, School, FileText, Settings, Smartphone, Apple, Gamepad2, Brain, MessageCircle, Globe, Wifi, Award, Atom, Languages, Calculator } from "lucide-react";
 
 export default function Home() {
   return (
@@ -15,7 +15,9 @@ export default function Home() {
             <span className="text-xl font-bold text-slate-900">StudentSchool</span>
           </div>
           <div className="flex items-center gap-6 text-sm font-medium text-slate-600">
+            <a href="#ksa" className="hover:text-blue-600 transition">KSA Market</a>
             <a href="#solution" className="hover:text-blue-600 transition">Features</a>
+            <a href="#games" className="hover:text-blue-600 transition">Gamified Learning</a>
             <a href="#revenue" className="hover:text-blue-600 transition">Revenue</a>
             <a href="#traction" className="hover:text-blue-600 transition">Traction</a>
             <a href="#investment" className="hover:text-blue-600 transition">Investment</a>
@@ -32,11 +34,12 @@ export default function Home() {
           </div>
           <h1 className="text-6xl font-bold text-slate-900 mb-6 leading-tight">
             The Future of<br />
-            <span className="text-blue-600">School Management</span>
+            <span className="text-blue-600">Education Management</span><br />
+            <span className="text-3xl text-slate-700">in Saudi Arabia 🇸🇦</span>
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12">
-            AI-powered platform serving 500+ schools, managing 50,000+ students,
-            with $2M ARR and growing 40% MoM
+            AI-powered CRM serving Schools, Universities & Colleges across KSA with gamified learning, 
+            Arabic-first design, and Ministry of Education compliance
           </p>
           <div className="flex items-center justify-center gap-8">
             <div className="text-center">
@@ -52,6 +55,104 @@ export default function Home() {
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600">40%</div>
               <div className="text-sm text-slate-600 mt-1">MoM Growth</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* KSA Market Opportunity Section */}
+      <section id="ksa" className="py-20 px-6 bg-gradient-to-br from-green-700 to-green-800">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="text-6xl mb-4">🇸🇦</div>
+            <h2 className="text-4xl font-bold text-white mb-4">Kingdom of Saudi Arabia Market</h2>
+            <p className="text-xl text-green-100">$10B+ Education Market • Vision 2030 Aligned • First-Mover Advantage</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+              <div className="text-5xl font-bold text-white mb-2">$10B+</div>
+              <div className="text-green-100 text-lg mb-4">Education Market Size</div>
+              <p className="text-green-200 text-sm">6M+ students across schools, colleges & universities in KSA</p>
+            </div>
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+              <div className="text-5xl font-bold text-white mb-2">2030</div>
+              <div className="text-green-100 text-lg mb-4">Vision 2030 Aligned</div>
+              <p className="text-green-200 text-sm">Government pushing digital transformation in education sector</p>
+            </div>
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+              <div className="text-5xl font-bold text-white mb-2">3x</div>
+              <div className="text-green-100 text-lg mb-4">Higher ARPU</div>
+              <p className="text-green-200 text-sm">Saudi institutions pay 3x more than other regional markets</p>
+            </div>
+          </div>
+          
+          {/* KSA-Specific Features */}
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-2xl">🕌</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">Prayer Time Integration</h3>
+                  <p className="text-green-100">Automatic schedule adjustments for Salah times across all Saudi regions</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Globe className="w-6 h-6 text-green-700" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">Arabic-First Platform</h3>
+                  <p className="text-green-100">Full RTL support, Hijri calendar, Arabic content prioritized</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Shield className="w-6 h-6 text-green-700" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">MOE Compliance</h3>
+                  <p className="text-green-100">Ministry of Education approved report formats and data standards</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MessageCircle className="w-6 h-6 text-green-700" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">WhatsApp Integration</h3>
+                  <p className="text-green-100">Direct parent communication via KSA's most popular messaging app</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="w-6 h-6 text-green-700" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">Quranic Studies Module</h3>
+                  <p className="text-green-100">Memorization tracking, Tajweed progress, digital Mushaf integration</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Users className="w-6 h-6 text-green-700" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">Gender-Segregated Options</h3>
+                  <p className="text-green-100">Separate portals for boys and girls schools with full customization</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -200,6 +301,17 @@ export default function Home() {
                   <div>
                     <h4 className="text-base font-semibold text-slate-900 mb-1">SMS & Notifications</h4>
                     <p className="text-sm text-slate-600">Automated alerts for attendance & homework</p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-5 bg-white rounded-xl border border-slate-200 hover:shadow-lg hover:border-blue-300 transition">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MessageCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-base font-semibold text-slate-900 mb-1">WhatsApp Integration</h4>
+                    <p className="text-sm text-slate-600">Direct parent communication via WhatsApp API</p>
                   </div>
                 </div>
               </div>
@@ -366,33 +478,213 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Gamified Learning Section */}
+      <section id="games" className="py-20 px-6 bg-gradient-to-br from-purple-600 to-purple-700">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-white text-sm font-medium mb-6">
+              <Gamepad2 className="w-4 h-4" />
+              Game-Changer Feature
+            </div>
+            <h2 className="text-4xl font-bold text-white mb-4">Gamified Learning Platform</h2>
+            <p className="text-xl text-purple-100">Increase student engagement by 60% with interactive educational games</p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6 mb-12">
+            <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/20 transition">
+              <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4">
+                <Calculator className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Math Games</h3>
+              <ul className="space-y-2 text-purple-100 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Interactive problem-solving</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Timed arithmetic challenges</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Geometry puzzles</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Multiplication races</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/20 transition">
+              <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4">
+                <Atom className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Physics Lab</h3>
+              <ul className="space-y-2 text-purple-100 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Virtual experiments</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>3D simulations</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Motion & force games</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Electricity circuits</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/20 transition">
+              <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4">
+                <Languages className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">English Games</h3>
+              <ul className="space-y-2 text-purple-100 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Vocabulary builder</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Grammar quizzes</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Speech recognition</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Reading comprehension</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/20 transition">
+              <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4">
+                <Award className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Rewards</h3>
+              <ul className="space-y-2 text-purple-100 text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Points & badges system</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Class leaderboards</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Achievement certificates</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>School-wide competitions</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* AI-Powered Learning */}
+          <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border-2 border-white/30">
+            <div className="flex items-center justify-between flex-wrap gap-8">
+              <div className="flex-1 min-w-[300px]">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center">
+                    <Brain className="w-7 h-7 text-purple-600" />
+                  </div>
+                  <h3 className="text-3xl font-bold text-white">AI-Powered Learning Assistant</h3>
+                </div>
+                <p className="text-lg text-purple-100 mb-6">
+                  24/7 intelligent tutor providing personalized help in Arabic & English
+                </p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Zap className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <div className="text-white font-semibold mb-1">Instant Homework Help</div>
+                      <div className="text-purple-200 text-sm">Step-by-step problem solving</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Target className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <div className="text-white font-semibold mb-1">Personalized Learning Paths</div>
+                      <div className="text-purple-200 text-sm">Adaptive content by skill level</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <BarChart3 className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <div className="text-white font-semibold mb-1">Predictive Analytics</div>
+                      <div className="text-purple-200 text-sm">Early intervention alerts</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Globe className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <div className="text-white font-semibold mb-1">Arabic Speech Recognition</div>
+                      <div className="text-purple-200 text-sm">Perfect for language learning</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex-shrink-0">
+                <div className="w-48 h-48 bg-white rounded-3xl flex items-center justify-center shadow-2xl">
+                  <div className="text-center">
+                    <Brain className="w-20 h-20 text-purple-600 mx-auto mb-3" />
+                    <div className="text-purple-600 font-bold text-lg">AI Tutor</div>
+                    <div className="text-slate-600 text-sm">Always Available</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Revenue Model Section - KEY FOR INVESTORS */}
       <section id="revenue" className="py-20 px-6 bg-gradient-to-br from-blue-600 to-blue-700">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Revenue Model</h2>
-            <p className="text-xl text-blue-100">Multiple revenue streams with 85% gross margins</p>
+            <p className="text-xl text-blue-100">4 revenue streams with 85% gross margins</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-6">
             <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
               <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
                 <DollarSign className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Subscription</h3>
-              <div className="text-4xl font-bold text-white mb-3">$99-$499</div>
-              <p className="text-blue-100 mb-4">per school/month</p>
+              <div className="text-4xl font-bold text-white mb-3">$199-$699</div>
+              <p className="text-blue-100 mb-4">per institution/month</p>
               <ul className="space-y-2 text-blue-100">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm">Basic: $99/mo (200 students)</span>
+                  <span className="text-sm">Basic: $199/mo (200 students)</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm">Pro: $249/mo (500 students)</span>
+                  <span className="text-sm">Pro: $399/mo (500 students)</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm">Enterprise: $499/mo (unlimited)</span>
+                  <span className="text-sm">Enterprise: $699/mo (unlimited)</span>
                 </li>
               </ul>
             </div>
@@ -414,7 +706,29 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm">$500K ARR from fees</span>
+                  <span className="text-sm">Integrated with Saudi banks</span>
+                </li>
+              </ul>
+            </div>
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                <Gamepad2 className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">Premium Games</h3>
+              <div className="text-4xl font-bold text-white mb-3">$99</div>
+              <p className="text-blue-100 mb-4">per game pack/year</p>
+              <ul className="space-y-2 text-blue-100">
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm">Advanced math games</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm">Physics lab simulations</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm">English language suite</span>
                 </li>
               </ul>
             </div>
@@ -422,8 +736,8 @@ export default function Home() {
               <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
                 <Sparkles className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">Premium Add-ons</h3>
-              <div className="text-4xl font-bold text-white mb-3">$50-$200</div>
+              <h3 className="text-2xl font-bold text-white mb-2">Add-ons</h3>
+              <div className="text-4xl font-bold text-white mb-3">$150-$300</div>
               <p className="text-blue-100 mb-4">per feature/month</p>
               <ul className="space-y-2 text-blue-100">
                 <li className="flex items-center gap-2">
