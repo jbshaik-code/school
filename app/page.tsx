@@ -62,31 +62,106 @@ export default function Home() {
 
       {/* KSA Market Opportunity Section */}
       <section id="ksa" className="py-20 px-6 bg-gradient-to-br from-green-700 to-green-800">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="text-6xl mb-4">🇸🇦</div>
-            <h2 className="text-4xl font-bold text-white mb-4">Kingdom of Saudi Arabia Market</h2>
-            <p className="text-xl text-green-100">$10B+ Education Market • Vision 2030 Aligned • First-Mover Advantage</p>
+            <div className="text-7xl mb-4">🇸🇦</div>
+            <h2 className="text-5xl font-bold text-white mb-4">Saudi Arabia: The Perfect Market</h2>
+            <p className="text-2xl text-green-100 mb-8">$10B+ Education Market • Vision 2030 Aligned • Government-Backed Growth</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+
+          {/* Vision 2030 Alignment - Major Highlight */}
+          <div className="mb-16 p-10 bg-white rounded-3xl shadow-2xl">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-3 px-5 py-2 bg-green-100 rounded-full text-green-800 text-base font-bold mb-4">
+                <Target className="w-5 h-5" />
+                Perfectly Aligned with Vision 2030
+              </div>
+              <h3 className="text-4xl font-bold text-slate-900 mb-4">Saudi Arabia's National Transformation Plan</h3>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                The Kingdom is investing <span className="font-bold text-green-700">$50B+</span> in education digital transformation. 
+                We're positioned to capture this massive government-backed opportunity.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl border-2 border-green-200">
+                <div className="text-5xl mb-3">📚</div>
+                <div className="text-3xl font-bold text-slate-900 mb-2">Digital Education</div>
+                <p className="text-slate-700 mb-4">Vision 2030 mandates 100% digital transformation of education sector by 2030</p>
+                <div className="flex items-center gap-2 text-green-700 font-semibold">
+                  <CheckCircle2 className="w-5 h-5" />
+                  <span>We deliver this solution</span>
+                </div>
+              </div>
+
+              <div className="p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl border-2 border-green-200">
+                <div className="text-5xl mb-3">🎯</div>
+                <div className="text-3xl font-bold text-slate-900 mb-2">Quality of Life</div>
+                <p className="text-slate-700 mb-4">Improve parent-school communication and student outcomes - key Vision 2030 pillar</p>
+                <div className="flex items-center gap-2 text-green-700 font-semibold">
+                  <CheckCircle2 className="w-5 h-5" />
+                  <span>Our communication hub</span>
+                </div>
+              </div>
+
+              <div className="p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl border-2 border-green-200">
+                <div className="text-5xl mb-3">🚀</div>
+                <div className="text-3xl font-bold text-slate-900 mb-2">Tech Innovation</div>
+                <p className="text-slate-700 mb-4">AI & gamification to create globally competitive education system</p>
+                <div className="flex items-center gap-2 text-green-700 font-semibold">
+                  <CheckCircle2 className="w-5 h-5" />
+                  <span>Our AI tutor & games</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 bg-gradient-to-r from-green-700 to-green-800 rounded-2xl">
+              <div className="flex items-center justify-between flex-wrap gap-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center">
+                    <Shield className="w-9 h-9 text-green-700" />
+                  </div>
+                  <div>
+                    <div className="text-white font-bold text-xl mb-1">Ministry of Education Partnership Potential</div>
+                    <div className="text-green-100">Positioned for government contracts & nationwide rollout</div>
+                  </div>
+                </div>
+                <div className="text-right">
+                  <div className="text-5xl font-bold text-white">$50B+</div>
+                  <div className="text-green-200 font-medium">Gov't Education Budget</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Market Metrics */}
+          <div className="grid md:grid-cols-4 gap-6 mb-12">
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
+              <div className="text-5xl font-bold text-white mb-2">6M+</div>
+              <div className="text-green-100 text-lg mb-2">Students</div>
+              <p className="text-green-200 text-sm">Across schools, colleges & universities</p>
+            </div>
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
               <div className="text-5xl font-bold text-white mb-2">$10B+</div>
-              <div className="text-green-100 text-lg mb-4">Education Market Size</div>
-              <p className="text-green-200 text-sm">6M+ students across schools, colleges & universities in KSA</p>
+              <div className="text-green-100 text-lg mb-2">Market Size</div>
+              <p className="text-green-200 text-sm">Private education spending annually</p>
             </div>
-            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-              <div className="text-5xl font-bold text-white mb-2">2030</div>
-              <div className="text-green-100 text-lg mb-4">Vision 2030 Aligned</div>
-              <p className="text-green-200 text-sm">Government pushing digital transformation in education sector</p>
-            </div>
-            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
               <div className="text-5xl font-bold text-white mb-2">3x</div>
-              <div className="text-green-100 text-lg mb-4">Higher ARPU</div>
-              <p className="text-green-200 text-sm">Saudi institutions pay 3x more than other regional markets</p>
+              <div className="text-green-100 text-lg mb-2">Higher ARPU</div>
+              <p className="text-green-200 text-sm">Saudi institutions pay premium prices</p>
+            </div>
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
+              <div className="text-5xl font-bold text-white mb-2">2030</div>
+              <div className="text-green-100 text-lg mb-2">Target Year</div>
+              <p className="text-green-200 text-sm">100% digital education mandate</p>
             </div>
           </div>
           
           {/* KSA-Specific Features */}
+          <div className="mb-8">
+            <h3 className="text-3xl font-bold text-white mb-6 text-center">Built Specifically for Saudi Institutions</h3>
+          </div>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
               <div className="flex items-start gap-4">
@@ -95,7 +170,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Prayer Time Integration</h3>
-                  <p className="text-green-100">Automatic schedule adjustments for Salah times across all Saudi regions</p>
+                  <p className="text-green-100">Automatic timetable adjustments for 5 daily prayers across all Saudi regions with Hijri calendar</p>
                 </div>
               </div>
             </div>
@@ -106,7 +181,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Arabic-First Platform</h3>
-                  <p className="text-green-100">Full RTL support, Hijri calendar, Arabic content prioritized</p>
+                  <p className="text-green-100">Native RTL support, Arabic AI, Hijri calendar, and Arabic voice recognition built-in</p>
                 </div>
               </div>
             </div>
@@ -117,7 +192,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">MOE Compliance</h3>
-                  <p className="text-green-100">Ministry of Education approved report formats and data standards</p>
+                  <p className="text-green-100">Full compliance with Ministry of Education standards, report formats, and data requirements</p>
                 </div>
               </div>
             </div>
@@ -127,8 +202,8 @@ export default function Home() {
                   <MessageCircle className="w-6 h-6 text-green-700" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Built-in Communication Hub</h3>
-                  <p className="text-green-100">In-platform voice calls, video chat & messaging - zero third-party apps</p>
+                  <h3 className="text-xl font-semibold text-white mb-2">Built-in Communication</h3>
+                  <p className="text-green-100">Voice, video & messaging - no third-party apps. Perfect for Saudi data sovereignty requirements</p>
                 </div>
               </div>
             </div>
@@ -139,7 +214,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Quranic Studies Module</h3>
-                  <p className="text-green-100">Memorization tracking, Tajweed progress, digital Mushaf integration</p>
+                  <p className="text-green-100">Memorization tracking, Tajweed progress monitoring, and digital Mushaf integration</p>
                 </div>
               </div>
             </div>
@@ -150,8 +225,36 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Gender-Segregated Options</h3>
-                  <p className="text-green-100">Separate portals for boys and girls schools with full customization</p>
+                  <p className="text-green-100">Separate portals and complete customization for boys and girls schools as per Saudi requirements</p>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Competitive Advantage in KSA */}
+          <div className="mt-12 p-8 bg-white/10 backdrop-blur-sm rounded-2xl border-2 border-white/30">
+            <h3 className="text-3xl font-bold text-white mb-6 text-center">Why We Win in Saudi Arabia</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-3">
+                  <Zap className="w-9 h-9 text-green-700" />
+                </div>
+                <div className="text-white font-bold text-lg mb-2">First-Mover Advantage</div>
+                <p className="text-green-100 text-sm">Only Arabic-first, Vision 2030-aligned EdTech CRM in the market</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-3">
+                  <Lock className="w-9 h-9 text-green-700" />
+                </div>
+                <div className="text-white font-bold text-lg mb-2">Data Sovereignty</div>
+                <p className="text-green-100 text-sm">All data hosted in Saudi Arabia - critical for government contracts</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-3">
+                  <TrendingUp className="w-9 h-9 text-green-700" />
+                </div>
+                <div className="text-white font-bold text-lg mb-2">Government Partnerships</div>
+                <p className="text-green-100 text-sm">Positioned for Ministry of Education nationwide rollout</p>
               </div>
             </div>
           </div>
