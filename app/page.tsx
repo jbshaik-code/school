@@ -1,6 +1,6 @@
 "use client";
 
-import { GraduationCap, TrendingUp, Users, DollarSign, Target, Zap, Shield, BarChart3, Sparkles, CheckCircle2, BookOpen, Calendar, UserCheck, ClipboardList, Video, Bell, CreditCard, Lock, Clock, School, FileText, Settings, Smartphone, Apple, Gamepad2, Brain, MessageCircle, Globe, Wifi, Award, Atom, Languages, Calculator, Phone, MessageSquare, Monitor, Flag, Landmark, Building2, Globe2 } from "lucide-react";
+import { GraduationCap, TrendingUp, Users, DollarSign, Target, Zap, Shield, BarChart3, Sparkles, CheckCircle2, BookOpen, Calendar, UserCheck, ClipboardList, Video, Bell, CreditCard, Lock, Clock, School, FileText, Settings, Smartphone, Apple, Gamepad2, Brain, MessageCircle, Globe, Wifi, Award, Atom, Languages, Calculator, Phone, MessageSquare, Monitor, Flag, Landmark, Building2, Globe2, Database, Server, CheckCircle, XCircle } from "lucide-react";
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-6 text-sm font-medium text-slate-600">
             <a href="#ksa" className="hover:text-blue-600 transition">KSA Market</a>
+            <a href="#data" className="hover:text-blue-600 transition">Data Sovereignty</a>
             <a href="#solution" className="hover:text-blue-600 transition">Features</a>
             <a href="#communication" className="hover:text-blue-600 transition">Communication</a>
             <a href="#games" className="hover:text-blue-600 transition">Gamified Learning</a>
@@ -266,6 +267,204 @@ export default function Home() {
                 </div>
                 <div className="text-white font-bold text-lg mb-2">Government Partnerships</div>
                 <p className="text-green-100 text-sm">Positioned for Ministry of Education nationwide rollout</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Data Sovereignty - Competitive Moat */}
+      <section id="data" className="py-20 px-6 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 rounded-full text-white text-sm font-medium mb-6">
+              <Shield className="w-4 h-4" />
+              Unbreakable Competitive Advantage
+            </div>
+            <h2 className="text-5xl font-bold text-white mb-4">100% Saudi Data Sovereignty</h2>
+            <p className="text-2xl text-slate-300">All data hosted in Saudi Arabia • PDPL Compliant • Government Contract Eligible</p>
+          </div>
+
+          {/* Main Comparison */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Our Platform */}
+            <div className="p-10 bg-gradient-to-br from-green-600 to-green-700 rounded-3xl shadow-2xl border-4 border-green-400">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center transform hover:scale-110 transition-transform">
+                  <Database className="w-9 h-9 text-green-700" />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold text-white mb-1">Our Platform</h3>
+                  <p className="text-green-100 text-lg">Saudi Data Centers</p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <CheckCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-white font-bold mb-1">Government Contracts Eligible</div>
+                    <div className="text-green-100 text-sm">Ministry of Education tenders accessible - $2B+ market</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <CheckCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-white font-bold mb-1">PDPL & NDMO Compliant</div>
+                    <div className="text-green-100 text-sm">Fully compliant with Saudi Personal Data Protection Law</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <CheckCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-white font-bold mb-1">100% Market Access</div>
+                    <div className="text-green-100 text-sm">Public + Private schools, universities, colleges</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <CheckCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-white font-bold mb-1">Zero Data Transfer Concerns</div>
+                    <div className="text-green-100 text-sm">No cross-border transfer issues, parent trust guaranteed</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <CheckCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-white font-bold mb-1">Premium Pricing Power</div>
+                    <div className="text-green-100 text-sm">Schools pay 2-3x more for locally-hosted solutions</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Competitors */}
+            <div className="p-10 bg-gradient-to-br from-red-600 to-red-700 rounded-3xl shadow-2xl border-4 border-red-400 opacity-80">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center">
+                  <Server className="w-9 h-9 text-red-700" />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold text-white mb-1">Competitors</h3>
+                  <p className="text-red-100 text-lg">AWS US/EU Servers</p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <XCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-white font-bold mb-1">Disqualified from Gov't Contracts</div>
+                    <div className="text-red-100 text-sm">Cannot serve public sector - 70% of market locked out</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <XCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-white font-bold mb-1">PDPL Compliance Issues</div>
+                    <div className="text-red-100 text-sm">Complex legal requirements, parent consent needed</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <XCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-white font-bold mb-1">Limited Market Access</div>
+                    <div className="text-red-100 text-sm">Only private schools - $3B vs $10B+ market</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <XCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-white font-bold mb-1">Data Transfer Concerns</div>
+                    <div className="text-red-100 text-sm">Cross-border transfers require explicit consent</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-white/20 backdrop-blur-sm rounded-xl">
+                  <XCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-white font-bold mb-1">Lower Pricing Power</div>
+                    <div className="text-red-100 text-sm">Competing on price, not trust or compliance</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Metrics */}
+          <div className="grid md:grid-cols-4 gap-6 mb-12">
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
+              <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform hover:scale-110 transition-transform">
+                <Target className="w-9 h-9 text-white" />
+              </div>
+              <div className="text-4xl font-bold text-white mb-2">100%</div>
+              <div className="text-slate-300 font-medium mb-2">Market Access</div>
+              <p className="text-slate-400 text-sm">Public + Private institutions</p>
+            </div>
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
+              <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform hover:scale-110 transition-transform">
+                <Landmark className="w-9 h-9 text-white" />
+              </div>
+              <div className="text-4xl font-bold text-white mb-2">$2B+</div>
+              <div className="text-slate-300 font-medium mb-2">Gov't Market</div>
+              <p className="text-slate-400 text-sm">Ministry contracts accessible</p>
+            </div>
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
+              <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform hover:scale-110 transition-transform">
+                <Lock className="w-9 h-9 text-white" />
+              </div>
+              <div className="text-4xl font-bold text-white mb-2">$500K+</div>
+              <div className="text-slate-300 font-medium mb-2">Barrier to Entry</div>
+              <p className="text-slate-400 text-sm">Cost for competitors to match</p>
+            </div>
+            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
+              <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform hover:scale-110 transition-transform">
+                <TrendingUp className="w-9 h-9 text-white" />
+              </div>
+              <div className="text-4xl font-bold text-white mb-2">2-3x</div>
+              <div className="text-slate-300 font-medium mb-2">Premium Pricing</div>
+              <p className="text-slate-400 text-sm">vs competitors</p>
+            </div>
+          </div>
+
+          {/* Infrastructure Details */}
+          <div className="p-10 bg-white/5 backdrop-blur-sm rounded-3xl border-2 border-white/20">
+            <h3 className="text-3xl font-bold text-white mb-8 text-center">Saudi Data Infrastructure</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="p-6 bg-white/10 rounded-2xl">
+                <div className="flex items-center gap-3 mb-4">
+                  <Server className="w-8 h-8 text-green-400" />
+                  <div className="text-white font-bold text-lg">Phase 1: Cloud Infrastructure</div>
+                </div>
+                <p className="text-slate-300 text-sm mb-3">Oracle Cloud Jeddah or STC Cloud</p>
+                <div className="text-green-400 font-semibold">$2-5K/month</div>
+              </div>
+              <div className="p-6 bg-white/10 rounded-2xl">
+                <div className="flex items-center gap-3 mb-4">
+                  <Database className="w-8 h-8 text-green-400" />
+                  <div className="text-white font-bold text-lg">Phase 2: Dedicated Servers</div>
+                </div>
+                <p className="text-slate-300 text-sm mb-3">After $5M funding - dedicated infrastructure</p>
+                <div className="text-green-400 font-semibold">$20-50K/month</div>
+              </div>
+              <div className="p-6 bg-white/10 rounded-2xl">
+                <div className="flex items-center gap-3 mb-4">
+                  <Shield className="w-8 h-8 text-green-400" />
+                  <div className="text-white font-bold text-lg">Compliance & Security</div>
+                </div>
+                <p className="text-slate-300 text-sm mb-3">PDPL certified, ISO 27001, SOC 2</p>
+                <div className="text-green-400 font-semibold">Gov't approved</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Investment Ask for Infrastructure */}
+          <div className="mt-12 p-8 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl">
+            <div className="flex items-center justify-between flex-wrap gap-6">
+              <div>
+                <div className="text-white font-bold text-2xl mb-2">$500K Infrastructure Investment</div>
+                <div className="text-blue-100">From $5M seed round → Unlocks $2B+ government market</div>
+              </div>
+              <div className="text-right">
+                <div className="text-5xl font-bold text-white">400x</div>
+                <div className="text-blue-200 font-medium">ROI Potential</div>
               </div>
             </div>
           </div>
@@ -1088,6 +1287,10 @@ export default function Home() {
               <div className="text-5xl font-bold text-white mb-2">$5M</div>
               <div className="text-slate-400 mb-6">Seed Round</div>
               <div className="text-left space-y-3">
+                <div className="flex items-center gap-3 text-slate-300">
+                  <CheckCircle2 className="w-5 h-5 text-blue-400" />
+                  <span>Saudi data infrastructure ($500K) - unlocks $2B+ gov't market</span>
+                </div>
                 <div className="flex items-center gap-3 text-slate-300">
                   <CheckCircle2 className="w-5 h-5 text-blue-400" />
                   <span>Product development & AI features</span>
