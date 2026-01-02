@@ -1,95 +1,172 @@
 "use client";
 
-import { GraduationCap, TrendingUp, Users, DollarSign, Target, Zap, Shield, BarChart3, Sparkles, CheckCircle2, BookOpen, Calendar, UserCheck, ClipboardList, Video, Bell, CreditCard, Lock, Clock, School, FileText, Settings, Smartphone, Apple, Gamepad2, Brain, MessageCircle, Globe, Wifi, Award, Atom, Languages, Calculator, Phone, MessageSquare, Monitor, Flag, Landmark, Building2, Globe2, Database, Server, CheckCircle } from "lucide-react";
+import { useState } from "react";
+import { GraduationCap, TrendingUp, Users, DollarSign, Target, Zap, Shield, BarChart3, Sparkles, CheckCircle2, BookOpen, Calendar, UserCheck, ClipboardList, Video, Bell, CreditCard, Lock, Clock, School, FileText, Settings, Smartphone, Apple, Gamepad2, Brain, MessageCircle, Globe, Wifi, Award, Atom, Languages, Calculator, Phone, MessageSquare, Monitor, Flag, Landmark, Building2, Globe2, Database, Server, CheckCircle, Menu, X } from "lucide-react";
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 scroll-smooth">
       {/* Header/Navigation */}
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-              <GraduationCap className="w-6 h-6 text-white" />
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                <GraduationCap className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
+              </div>
+              <span className="text-lg sm:text-xl font-bold text-slate-900">StudentSchool</span>
             </div>
-            <span className="text-xl font-bold text-slate-900">StudentSchool</span>
+            
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center gap-4 xl:gap-6 text-sm font-medium text-slate-600">
+              <a href="#ksa" className="hover:text-blue-600 transition-colors">KSA Market</a>
+              <a href="#data" className="hover:text-blue-600 transition-colors">Data Sovereignty</a>
+              <a href="#solution" className="hover:text-blue-600 transition-colors">Features</a>
+              <a href="#communication" className="hover:text-blue-600 transition-colors">Communication</a>
+              <a href="#games" className="hover:text-blue-600 transition-colors">Gamified Learning</a>
+              <a href="#revenue" className="hover:text-blue-600 transition-colors">Revenue</a>
+              <a href="#investment" className="hover:text-blue-600 transition-colors">Investment</a>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="lg:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <X className="w-6 h-6 text-slate-700" />
+              ) : (
+                <Menu className="w-6 h-6 text-slate-700" />
+              )}
+            </button>
           </div>
-          <div className="flex items-center gap-6 text-sm font-medium text-slate-600">
-            <a href="#ksa" className="hover:text-blue-600 transition">KSA Market</a>
-            <a href="#data" className="hover:text-blue-600 transition">Data Sovereignty</a>
-            <a href="#solution" className="hover:text-blue-600 transition">Features</a>
-            <a href="#communication" className="hover:text-blue-600 transition">Communication</a>
-            <a href="#games" className="hover:text-blue-600 transition">Gamified Learning</a>
-            <a href="#revenue" className="hover:text-blue-600 transition">Revenue</a>
-            <a href="#investment" className="hover:text-blue-600 transition">Investment</a>
-          </div>
+
+          {/* Mobile Navigation */}
+          {mobileMenuOpen && (
+            <div className="lg:hidden mt-4 pb-4 border-t border-slate-200">
+              <div className="flex flex-col gap-3 pt-4">
+                <a 
+                  href="#ksa" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                >
+                  KSA Market
+                </a>
+                <a 
+                  href="#data" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                >
+                  Data Sovereignty
+                </a>
+                <a 
+                  href="#solution" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                >
+                  Features
+                </a>
+                <a 
+                  href="#communication" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                >
+                  Communication
+                </a>
+                <a 
+                  href="#games" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                >
+                  Gamified Learning
+                </a>
+                <a 
+                  href="#revenue" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                >
+                  Revenue
+                </a>
+                <a 
+                  href="#investment" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                >
+                  Investment
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-700 text-sm font-medium mb-6">
-            <Sparkles className="w-4 h-4" />
-            Transforming Education Management
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-100 rounded-full text-blue-700 text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+            <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
+            <span className="whitespace-nowrap">Transforming Education Management</span>
           </div>
-          <h1 className="text-6xl font-bold text-slate-900 mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-4 sm:mb-6 leading-tight px-2">
             The Future of<br />
             <span className="text-blue-600">Education Management</span><br />
-            <span className="text-3xl text-slate-700 flex items-center justify-center gap-2 mt-4">
+            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-700 flex items-center justify-center gap-2 mt-2 sm:mt-4 flex-wrap">
               in Saudi Arabia 
-              <Flag className="w-8 h-8 text-green-600 inline-block" />
+              <Flag className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-green-600 inline-block" />
             </span>
           </h1>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12">
+          <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-8 sm:mb-12 px-4">
             AI-powered CRM serving Schools, Universities & Colleges across KSA with gamified learning, 
             Arabic-first design, and Ministry of Education compliance
           </p>
-          <div className="flex items-center justify-center gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600">$2M</div>
-              <div className="text-sm text-slate-600 mt-1">Annual Revenue</div>
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 px-4">
+            <div className="text-center min-w-[80px]">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600">$2M</div>
+              <div className="text-xs sm:text-sm text-slate-600 mt-1">Annual Revenue</div>
             </div>
-            <div className="w-px h-12 bg-slate-300"></div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600">500+</div>
-              <div className="text-sm text-slate-600 mt-1">Schools</div>
+            <div className="hidden sm:block w-px h-8 sm:h-10 md:h-12 bg-slate-300"></div>
+            <div className="text-center min-w-[80px]">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600">500+</div>
+              <div className="text-xs sm:text-sm text-slate-600 mt-1">Schools</div>
             </div>
-            <div className="w-px h-12 bg-slate-300"></div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600">40%</div>
-              <div className="text-sm text-slate-600 mt-1">MoM Growth</div>
+            <div className="hidden sm:block w-px h-8 sm:h-10 md:h-12 bg-slate-300"></div>
+            <div className="text-center min-w-[80px]">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600">40%</div>
+              <div className="text-xs sm:text-sm text-slate-600 mt-1">MoM Growth</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* KSA Market Opportunity Section */}
-      <section id="ksa" className="py-20 px-6 bg-gradient-to-br from-green-700 to-green-800">
+      <section id="ksa" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-green-700 to-green-800">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-24 h-24 bg-white rounded-3xl shadow-2xl mb-6 transform hover:scale-110 transition-transform">
-              <Flag className="w-14 h-14 text-green-600" />
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
+            <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-white rounded-2xl sm:rounded-3xl shadow-2xl mb-4 sm:mb-6 transform hover:scale-110 transition-transform">
+              <Flag className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 text-green-600" />
             </div>
-            <h2 className="text-5xl font-bold text-white mb-4">Saudi Arabia: The Perfect Market</h2>
-            <p className="text-2xl text-green-100 mb-8">$10B+ Education Market • Vision 2030 Aligned • Government-Backed Growth</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 px-2">Saudi Arabia: The Perfect Market</h2>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-green-100 mb-6 sm:mb-8 px-4">$10B+ Education Market • Vision 2030 Aligned • Government-Backed Growth</p>
           </div>
 
           {/* Vision 2030 Alignment - Major Highlight */}
-          <div className="mb-16 p-10 bg-white rounded-3xl shadow-2xl">
-            <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-3 px-5 py-2 bg-green-100 rounded-full text-green-800 text-base font-bold mb-4">
-                <Target className="w-5 h-5" />
-                Perfectly Aligned with Vision 2030
+          <div className="mb-10 sm:mb-12 md:mb-16 p-6 sm:p-8 md:p-10 bg-white rounded-2xl sm:rounded-3xl shadow-2xl">
+            <div className="text-center mb-6 sm:mb-8">
+              <div className="inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 bg-green-100 rounded-full text-green-800 text-xs sm:text-sm md:text-base font-bold mb-3 sm:mb-4">
+                <Target className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span className="whitespace-nowrap">Perfectly Aligned with Vision 2030</span>
               </div>
-              <h3 className="text-4xl font-bold text-slate-900 mb-4">Saudi Arabia's National Transformation Plan</h3>
-              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-3 sm:mb-4 px-2">Saudi Arabia's National Transformation Plan</h3>
+              <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto px-4">
                 The Kingdom is investing <span className="font-bold text-green-700">$50B+</span> in education digital transformation. 
                 We're positioned to capture this massive government-backed opportunity.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 mb-6 sm:mb-8">
               <div className="p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl border-2 border-green-200">
                 <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mb-4 transform hover:rotate-12 transition-transform shadow-lg">
                   <BookOpen className="w-9 h-9 text-white" />
@@ -147,34 +224,34 @@ export default function Home() {
           </div>
 
           {/* Market Metrics */}
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
-            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
-              <div className="text-5xl font-bold text-white mb-2">6M+</div>
-              <div className="text-green-100 text-lg mb-2">Students</div>
-              <p className="text-green-200 text-sm">Across schools, colleges & universities</p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 mb-8 sm:mb-10 md:mb-12">
+            <div className="p-4 sm:p-6 md:p-8 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20 text-center">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">6M+</div>
+              <div className="text-green-100 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">Students</div>
+              <p className="text-green-200 text-xs sm:text-sm">Across schools, colleges & universities</p>
             </div>
-            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
-              <div className="text-5xl font-bold text-white mb-2">$10B+</div>
-              <div className="text-green-100 text-lg mb-2">Market Size</div>
-              <p className="text-green-200 text-sm">Private education spending annually</p>
+            <div className="p-4 sm:p-6 md:p-8 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20 text-center">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">$10B+</div>
+              <div className="text-green-100 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">Market Size</div>
+              <p className="text-green-200 text-xs sm:text-sm">Private education spending annually</p>
             </div>
-            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
-              <div className="text-5xl font-bold text-white mb-2">3x</div>
-              <div className="text-green-100 text-lg mb-2">Higher ARPU</div>
-              <p className="text-green-200 text-sm">Saudi institutions pay premium prices</p>
+            <div className="p-4 sm:p-6 md:p-8 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20 text-center">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">3x</div>
+              <div className="text-green-100 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">Higher ARPU</div>
+              <p className="text-green-200 text-xs sm:text-sm">Saudi institutions pay premium prices</p>
             </div>
-            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
-              <div className="text-5xl font-bold text-white mb-2">2030</div>
-              <div className="text-green-100 text-lg mb-2">Target Year</div>
-              <p className="text-green-200 text-sm">100% digital education mandate</p>
+            <div className="p-4 sm:p-6 md:p-8 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20 text-center">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">2030</div>
+              <div className="text-green-100 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">Target Year</div>
+              <p className="text-green-200 text-xs sm:text-sm">100% digital education mandate</p>
             </div>
           </div>
           
           {/* KSA-Specific Features */}
-          <div className="mb-8">
-            <h3 className="text-3xl font-bold text-white mb-6 text-center">Built Specifically for Saudi Institutions</h3>
+          <div className="mb-6 sm:mb-8">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-6 text-center px-2">Built Specifically for Saudi Institutions</h3>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
             <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 transform hover:rotate-12 transition-transform shadow-lg">
@@ -274,30 +351,30 @@ export default function Home() {
       </section>
 
       {/* Data Sovereignty - Competitive Moat */}
-      <section id="data" className="py-20 px-6 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <section id="data" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 rounded-full text-white text-sm font-medium mb-6">
-              <Shield className="w-4 h-4" />
-              Unbreakable Competitive Advantage
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-600 rounded-full text-white text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+              <Shield className="w-3 h-3 sm:w-4 sm:h-4" />
+              <span className="whitespace-nowrap">Unbreakable Competitive Advantage</span>
             </div>
-            <h2 className="text-5xl font-bold text-white mb-4">100% Saudi Data Sovereignty</h2>
-            <p className="text-2xl text-slate-300">All data hosted in Saudi Arabia • PDPL Compliant • Government Contract Eligible</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 px-2">100% Saudi Data Sovereignty</h2>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-300 px-4">All data hosted in Saudi Arabia • PDPL Compliant • Government Contract Eligible</p>
           </div>
 
           {/* Our Platform Advantages */}
-          <div className="max-w-4xl mx-auto mb-12">
-            <div className="p-10 bg-gradient-to-br from-green-600 to-green-700 rounded-3xl shadow-2xl border-4 border-green-400">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center transform hover:scale-110 transition-transform shadow-lg">
-                  <Database className="w-12 h-12 text-green-700" />
+          <div className="max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12">
+            <div className="p-6 sm:p-8 md:p-10 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl sm:rounded-3xl shadow-2xl border-2 sm:border-4 border-green-400">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-4 mb-6 sm:mb-8">
+                <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-white rounded-xl sm:rounded-2xl flex items-center justify-center transform hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                  <Database className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-green-700" />
                 </div>
-                <div>
-                  <h3 className="text-4xl font-bold text-white mb-1">Saudi Data Centers</h3>
-                  <p className="text-green-100 text-xl">100% Compliant • Government Eligible • Trusted Platform</p>
+                <div className="text-center sm:text-left">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">Saudi Data Centers</h3>
+                  <p className="text-green-100 text-base sm:text-lg md:text-xl">100% Compliant • Government Eligible • Trusted Platform</p>
                 </div>
               </div>
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                 <div className="flex items-start gap-3 p-5 bg-white/20 backdrop-blur-sm rounded-xl">
                   <CheckCircle className="w-7 h-7 text-white flex-shrink-0 mt-0.5" />
                   <div>
@@ -345,38 +422,38 @@ export default function Home() {
           </div>
 
           {/* Key Metrics */}
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
-            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
-              <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform hover:scale-110 transition-transform">
-                <Target className="w-9 h-9 text-white" />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 mb-8 sm:mb-10 md:mb-12">
+            <div className="p-4 sm:p-6 md:p-8 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20 text-center">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-green-600 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 transform hover:scale-110 transition-transform">
+                <Target className="w-6 h-6 sm:w-7 sm:h-7 md:w-9 md:h-9 text-white" />
               </div>
-              <div className="text-4xl font-bold text-white mb-2">100%</div>
-              <div className="text-slate-300 font-medium mb-2">Market Access</div>
-              <p className="text-slate-400 text-sm">Public + Private institutions</p>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 sm:mb-2">100%</div>
+              <div className="text-slate-300 font-medium mb-1 sm:mb-2 text-xs sm:text-sm">Market Access</div>
+              <p className="text-slate-400 text-xs sm:text-sm">Public + Private institutions</p>
             </div>
-            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
-              <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform hover:scale-110 transition-transform">
-                <Landmark className="w-9 h-9 text-white" />
+            <div className="p-4 sm:p-6 md:p-8 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20 text-center">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-green-600 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 transform hover:scale-110 transition-transform">
+                <Landmark className="w-6 h-6 sm:w-7 sm:h-7 md:w-9 md:h-9 text-white" />
               </div>
-              <div className="text-4xl font-bold text-white mb-2">$2B+</div>
-              <div className="text-slate-300 font-medium mb-2">Gov't Market</div>
-              <p className="text-slate-400 text-sm">Ministry contracts accessible</p>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 sm:mb-2">$2B+</div>
+              <div className="text-slate-300 font-medium mb-1 sm:mb-2 text-xs sm:text-sm">Gov't Market</div>
+              <p className="text-slate-400 text-xs sm:text-sm">Ministry contracts accessible</p>
             </div>
-            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
-              <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform hover:scale-110 transition-transform">
-                <Lock className="w-9 h-9 text-white" />
+            <div className="p-4 sm:p-6 md:p-8 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20 text-center">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-green-600 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 transform hover:scale-110 transition-transform">
+                <Lock className="w-6 h-6 sm:w-7 sm:h-7 md:w-9 md:h-9 text-white" />
               </div>
-              <div className="text-4xl font-bold text-white mb-2">$500K+</div>
-              <div className="text-slate-300 font-medium mb-2">Barrier to Entry</div>
-              <p className="text-slate-400 text-sm">Cost for competitors to match</p>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 sm:mb-2">$500K+</div>
+              <div className="text-slate-300 font-medium mb-1 sm:mb-2 text-xs sm:text-sm">Barrier to Entry</div>
+              <p className="text-slate-400 text-xs sm:text-sm">Cost for competitors to match</p>
             </div>
-            <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 text-center">
-              <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform hover:scale-110 transition-transform">
-                <TrendingUp className="w-9 h-9 text-white" />
+            <div className="p-4 sm:p-6 md:p-8 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20 text-center">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-green-600 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 transform hover:scale-110 transition-transform">
+                <TrendingUp className="w-6 h-6 sm:w-7 sm:h-7 md:w-9 md:h-9 text-white" />
               </div>
-              <div className="text-4xl font-bold text-white mb-2">2-3x</div>
-              <div className="text-slate-300 font-medium mb-2">Premium Pricing</div>
-              <p className="text-slate-400 text-sm">vs competitors</p>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 sm:mb-2">2-3x</div>
+              <div className="text-slate-300 font-medium mb-1 sm:mb-2 text-xs sm:text-sm">Premium Pricing</div>
+              <p className="text-slate-400 text-xs sm:text-sm">vs competitors</p>
             </div>
           </div>
 
@@ -428,11 +505,11 @@ export default function Home() {
       </section>
 
       {/* Solution Section - Platform Features */}
-      <section id="solution" className="py-20 px-6">
+      <section id="solution" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Complete Platform Features</h2>
-            <p className="text-xl text-slate-600">17+ powerful modules for Schools, Colleges & Universities</p>
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-3 sm:mb-4 px-2">Complete Platform Features</h2>
+            <p className="text-base sm:text-lg md:text-xl text-slate-600 px-4">17+ powerful modules for Schools, Colleges & Universities</p>
           </div>
 
           {/* Admin/School Management Modules */}
@@ -441,7 +518,7 @@ export default function Home() {
               <School className="w-7 h-7 text-blue-600" />
               Admin & Management
             </h3>
-            <div className="grid md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
               <div className="p-5 bg-white rounded-xl border border-slate-200 hover:shadow-lg hover:border-blue-300 transition">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -517,7 +594,7 @@ export default function Home() {
               <Clock className="w-7 h-7 text-blue-600" />
               Daily Operations
             </h3>
-            <div className="grid md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
               <div className="p-5 bg-white rounded-xl border border-slate-200 hover:shadow-lg hover:border-blue-300 transition">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -604,7 +681,7 @@ export default function Home() {
               <BarChart3 className="w-7 h-7 text-blue-600" />
               Analytics & Security
             </h3>
-            <div className="grid md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
               <div className="p-5 bg-white rounded-xl border border-slate-200 hover:shadow-lg hover:border-blue-300 transition">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -748,9 +825,9 @@ export default function Home() {
       </section>
 
       {/* Built-in Communication Platform */}
-      <section id="communication" className="py-20 px-6 bg-white">
+      <section id="communication" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-700 text-sm font-medium mb-6">
               <MessageCircle className="w-4 h-4" />
               Zero Third-Party Apps
@@ -759,7 +836,7 @@ export default function Home() {
             <p className="text-xl text-slate-600">Everything happens inside your platform - complete control, zero external apps</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-7 md:gap-8 mb-8 sm:mb-10 md:mb-12">
             <div className="p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border-2 border-blue-200">
               <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-4 mx-auto">
                 <Phone className="w-9 h-9 text-white" />
@@ -900,9 +977,9 @@ export default function Home() {
       </section>
 
       {/* Gamified Learning Section */}
-      <section id="games" className="py-20 px-6 bg-gradient-to-br from-purple-600 to-purple-700">
+      <section id="games" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-600 to-purple-700">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-white text-sm font-medium mb-6">
               <Gamepad2 className="w-4 h-4" />
               Game-Changer Feature
@@ -911,7 +988,7 @@ export default function Home() {
             <p className="text-xl text-purple-100">Increase student engagement by 60% with interactive educational games</p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 mb-8 sm:mb-10 md:mb-12">
             <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/20 transition">
               <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-4">
                 <Calculator className="w-8 h-8 text-purple-600" />
@@ -1080,13 +1157,13 @@ export default function Home() {
       </section>
 
       {/* Revenue Model Section - KEY FOR INVESTORS */}
-      <section id="revenue" className="py-20 px-6 bg-gradient-to-br from-blue-600 to-blue-700">
+      <section id="revenue" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-blue-700">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Revenue Model</h2>
             <p className="text-xl text-blue-100">4 revenue streams with 85% gross margins</p>
           </div>
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
             <div className="p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
               <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
                 <DollarSign className="w-6 h-6 text-white" />
@@ -1180,13 +1257,13 @@ export default function Home() {
       </section>
 
       {/* Traction Section */}
-      <section id="traction" className="py-20 px-6 bg-white">
+      <section id="traction" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">Traction & Growth</h2>
             <p className="text-xl text-slate-600">Proven market fit with exponential growth</p>
           </div>
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
             <div className="text-center">
               <div className="text-5xl font-bold text-blue-600 mb-2">500+</div>
               <div className="text-slate-600 font-medium">Active Schools</div>
@@ -1206,7 +1283,7 @@ export default function Home() {
           </div>
           <div className="mt-16 p-8 bg-slate-50 rounded-2xl border border-slate-200">
             <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">Revenue Projection</h3>
-            <div className="grid md:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4">
               <div className="text-center">
                 <div className="text-sm text-slate-600 mb-2">Year 1</div>
                 <div className="text-2xl font-bold text-slate-900">$2M</div>
@@ -1233,12 +1310,12 @@ export default function Home() {
       </section>
 
       {/* Investment Ask Section */}
-      <section id="investment" className="py-20 px-6 bg-gradient-to-br from-slate-900 to-slate-800">
+      <section id="investment" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 to-slate-800">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Investment Opportunity</h2>
-          <p className="text-xl text-slate-300 mb-12">Join us in transforming education for 100M students worldwide</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6 px-2">Investment Opportunity</h2>
+          <p className="text-base sm:text-lg md:text-xl text-slate-300 mb-8 sm:mb-10 md:mb-12 px-4">Join us in transforming education for 100M students worldwide</p>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7 md:gap-8 mb-8 sm:mb-10 md:mb-12">
             <div className="p-8 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10">
               <div className="text-5xl font-bold text-white mb-2">$5M</div>
               <div className="text-slate-400 mb-6">Seed Round</div>
